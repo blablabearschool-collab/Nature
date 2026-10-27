@@ -1,0 +1,343 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102d2b"><title>Evolution der Erde – Expedition B1</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+:root{--ink:#17302b;--cream:#f3f0e4;--gold:#f2c84d;--green:#285744;--line:#d1cfbd;--good:#166d45;--bad:#a53b32}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 'DM Sans',system-ui,sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.6}header{background:#122b29;color:#fff;position:sticky;top:0;z-index:10;border-bottom:3px solid var(--gold)}.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 22px;gap:12px}.brand{display:flex;gap:11px;align-items:center;letter-spacing:2px;text-transform:uppercase;font-weight:800;font-size:13px}.square{display:inline-block;width:27px;height:36px;border:5px solid var(--gold)}.toplink{color:#fff;text-decoration:none;font-size:13px}.hero{background:linear-gradient(100deg,#0f2925ed,#123a2bbb),radial-gradient(circle at 80% 30%,#a9b79b,#233e30);color:#fff;padding:70px 22px 76px}.hero-in{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:3px;font-size:13px;text-transform:uppercase}h1,h2,h3,.big{font-family:Oswald,Impact,'Arial Narrow',sans-serif;line-height:1.08;text-transform:uppercase}h1{font-size:clamp(56px,9vw,112px);margin:18px 0 20px;max-width:950px;letter-spacing:-1px}h2{font-size:clamp(34px,5vw,55px);margin:0 0 12px}h3{font-size:25px;margin:0 0 10px}.intro{max-width:660px;font-size:18px;color:#deebe3}.goldline{width:95px;height:6px;background:var(--gold);margin:23px 0}.container{max-width:1100px;margin:0 auto;padding:42px 22px 90px}.kicker{text-transform:uppercase;font-weight:800;color:#6b7a6c;font-size:12px;letter-spacing:2px}.lesson-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:22px 0 42px}.tile{background:#fffdf5;border:1px solid var(--line);padding:24px;text-align:left;box-shadow:5px 5px 0 #b9b49f;min-height:175px;transition:transform .2s}.tile:hover{transform:translateY(-3px)}.tile strong{display:block;font:600 28px Oswald,sans-serif;text-transform:uppercase;margin:12px 0 7px}.tile small{font-size:14px;color:#5c665d}.tile .num{font-family:Oswald;font-size:14px;color:#667267}.panel{display:none;scroll-margin-top:86px}.panel.active{display:block}.sectionhead{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;border-bottom:3px solid var(--ink);padding:0 0 16px;margin-bottom:23px}.sectionhead p{margin:0;color:#65756b}.meter{font-size:13px;font-weight:800;background:var(--gold);padding:9px 15px;white-space:nowrap}.question{background:#fffdf7;border:1px solid var(--line);padding:24px;margin:15px 0}.qtop{font-size:12px;font-weight:800;color:#647669;letter-spacing:2px}.question h3{font-family:'DM Sans',sans-serif;text-transform:none;font-size:18px;line-height:1.48;margin:12px 0 18px}.options{display:grid;gap:9px}.option{background:#f8f7f0;color:var(--ink);border:1.5px solid #cacdbf;padding:12px 15px;text-align:left;display:flex;align-items:center;gap:11px;border-radius:4px}.letter{width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-weight:800;background:#e8e9dc;flex:none}.option.selected.correct,.option.key{background:#dcf2e5;border-color:var(--good)}.option.selected.wrong{background:#f7e4e0;border-color:var(--bad)}.explain{padding:12px 15px;margin-top:14px;border-left:5px solid var(--good);background:#edf4e8;display:none}.explain.wrong{border-color:var(--bad);background:#fbede9}.action{border:0;padding:13px 21px;font-weight:800;text-transform:uppercase;letter-spacing:1px;background:var(--gold);color:#1d3025}.action.dark{background:var(--ink);color:#fff}.action.ghost{background:transparent;border:1px solid var(--ink)}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.result{background:#e9eee0;border:2px solid var(--green);padding:25px;margin:23px 0;display:none}.result .big{font-size:65px;margin:6px 0}.wordbank{display:flex;flex-wrap:wrap;gap:7px;margin:22px 0;padding:16px;border:1px dashed #799481}.wordbank span{padding:5px 10px;background:#dae6d6;font-weight:700;font-size:14px}.reading{background:#fffdf7;padding:27px;border-left:7px solid var(--gold);line-height:2.05}.reading select{border:0;border-bottom:2px solid #1f654d;border-radius:0;color:var(--ink);background:#f2f1df;padding:5px;font-size:14px;max-width:200px;min-width:150px}.reading select.good{background:#d5f0db}.reading select.bad{background:#f5dcda}.reading p{margin:12px 0}.hintline{margin:0 0 20px;color:#526354}.matching{display:grid;grid-template-columns:1fr 1fr;gap:16px}.match-col{display:grid;gap:8px;align-content:start}.matchbtn{border:1px solid #afb9ad;background:#fffdf6;text-align:left;padding:11px;font-size:14px;min-height:51px}.matchbtn.active{outline:3px solid var(--gold)}.matchbtn.done{background:#e3f2e7;border-color:var(--good)}.matchbtn.shake{background:#f8ded8;border-color:var(--bad)}.index{display:inline-block;font-weight:800;width:30px;color:#497058}.summary{background:#16382e;color:#fff;padding:35px;margin-top:45px}.summary h2{color:var(--gold)}.scoregrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.scorebox{border:1px solid #779083;padding:15px}.scorebox strong{display:block;font:600 35px Oswald}.student{padding:12px;width:280px;max-width:100%;border:1px solid #99aba0;background:#fff}.small{font-size:13px}.feedback{min-height:22px;font-weight:700;margin-top:12px}.note{font-size:13px;color:#596a5e}footer{background:#102d2b;color:#c0d0c5;padding:25px 22px;text-align:center;font-size:13px}.no-print{}@media(max-width:650px){.lesson-grid,.matching{grid-template-columns:1fr}.scoregrid{grid-template-columns:repeat(2,1fr)}.sectionhead{align-items:flex-start;flex-direction:column}.hero{padding:47px 20px 56px}.container{padding:28px 15px 65px}.question{padding:18px}.reading{padding:15px}.nav{padding:12px 15px}.hero h1{font-size:58px}.tile{min-height:145px}}@media print{header,.hero,.lesson-grid,.no-print,footer,.action{display:none!important}.panel{display:none!important}#print-sheet{display:block!important;color:#000;background:white}.summary{color:#000;background:white}.summary h2{color:#000}.scorebox{border-color:#444}.container{max-width:none;padding:0}body{background:white}}
+</style></head><body>
+<header><nav class="nav"><div class="brand"><span class="square"></span> EARTH / EXPEDITION <span style="color:#f2c84d">B1</span></div><a href="#modules" class="toplink">DIE MODULE ↓</a></nav></header>
+<section class="hero"><div class="hero-in"><div class="eyebrow">Die Geschichte des Lebens · Interaktive Expedition</div><div class="goldline"></div><h1>Evolution<br>der Erde<span style="color:#f2c84d">.</span></h1><p class="intro">4,5 Milliarden Jahre. Unzählige Arten. Eine unglaubliche Geschichte. Teste dein Hörverstehen und lerne die Sprache der Evolution.</p><div class="row"><span>◉ NIVEAU B1</span><span>◉ 4 MODULE</span><span>◉ SOFORTIGES FEEDBACK</span></div></div></section>
+<main class="container"><section id="modules"><div class="kicker">Wähle deine Expedition</div><h2>Vier Lernstationen</h2><div class="lesson-grid"><button class="tile" data-go="part1"><span class="num">01 / HÖRVERSTEHEN</span><strong>Teil 1</strong><small>Von den ersten Zellen bis zu den Dinosauriern · 10 Fragen</small></button><button class="tile" data-go="part2"><span class="num">02 / HÖRVERSTEHEN</span><strong>Teil 2</strong><small>Vom Meer bis zum Eiszeitalter · 10 Fragen</small></button><button class="tile" data-go="cloze"><span class="num">03 / LESEVERSTEHEN</span><strong>Lückentext</strong><small>Ein Text mit ungefähr 200 Wörtern · 7 Lücken</small></button><button class="tile" data-go="vocab"><span class="num">04 / WORTSCHATZ</span><strong>Verbinde die Wörter</strong><small>25 deutsche Begriffe und ihre ukrainischen Übersetzungen</small></button></div></section>
+<section class="panel" id="part1"><div class="sectionhead"><div><div class="kicker">Modul 01 / Hörverstehen</div><h2>Teil 1</h2><p>Wähle eine Antwort. Du bekommst sofort eine Erklärung.</p></div><span class="meter" id="meter1">0 / 10</span></div><div id="quiz1"></div><div class="result" id="res1"></div><button class="action dark no-print" data-go="part2">Weiter zu Teil 2 →</button></section>
+<section class="panel" id="part2"><div class="sectionhead"><div><div class="kicker">Modul 02 / Hörverstehen</div><h2>Teil 2</h2><p>Wähle eine Antwort. Du kannst deine Antwort danach nicht mehr ändern.</p></div><span class="meter" id="meter2">0 / 10</span></div><div id="quiz2"></div><div class="result" id="res2"></div><button class="action dark no-print" data-go="cloze">Weiter zum Lückentext →</button></section>
+<section class="panel" id="cloze"><div class="sectionhead"><div><div class="kicker">Modul 03 / Leseverstehen</div><h2>Wörter einsetzen</h2><p>Setze die sieben Wörter aus der Liste an der richtigen Stelle ein. Jedes Wort passt genau einmal.</p></div><span class="meter" id="meter3">0 / 7</span></div><div class="wordbank" id="bank"></div><article class="reading" id="reading"></article><div class="row no-print" style="margin:18px 0"><button class="action" id="checkCloze">Antworten überprüfen</button><button class="action ghost" id="resetCloze">Noch einmal</button></div><div class="feedback" id="clozeFeedback" aria-live="polite"></div><button class="action dark no-print" data-go="vocab">Weiter zum Wortschatz →</button></section>
+<section class="panel" id="vocab"><div class="sectionhead"><div><div class="kicker">Modul 04 / Wortschatz</div><h2>Paare finden</h2><p>Wähle zuerst ein deutsches Wort und dann seine ukrainische Übersetzung.</p></div><span class="meter" id="meter4">0 / 25</span></div><p class="hintline">Wenn du ein falsches Paar wählst, kannst du es noch einmal versuchen. Für die Endnote zählt nur der erste Versuch pro Wort.</p><div class="matching"><div class="match-col" id="german"></div><div class="match-col" id="ukrainian"></div></div><div class="feedback" id="matchFeedback" aria-live="polite"></div><button class="action ghost no-print" id="resetMatch" style="margin-top:10px">Wortschatz neu starten</button></section>
+<section class="summary" id="summary"><div class="kicker" style="color:#f2c84d">Expeditionsbericht</div><h2>Dein Ergebnis</h2><label for="student">Name der Schülerin / des Schülers</label><div class="row" style="margin:9px 0 25px"><input class="student" id="student" placeholder="Vorname und Nachname" maxlength="80" autocomplete="name"/><span class="small">Der Name erscheint im PDF-Bericht.</span></div><div class="scoregrid"><div class="scorebox"><small>Teil 1</small><strong id="s1">0/10</strong></div><div class="scorebox"><small>Teil 2</small><strong id="s2">0/10</strong></div><div class="scorebox"><small>Lückentext</small><strong id="s3">0/7</strong></div><div class="scorebox"><small>Wortschatz</small><strong id="s4">0/25</strong></div></div><p id="total" style="font-size:20px;font-weight:700;margin-top:22px">0 von 52 Punkten</p><p class="small">Wortschatz: ein Punkt pro Wort, wenn das Paar beim ersten Versuch richtig ist. Der Bericht zeigt auch unbeantwortete Fragen.</p><div class="row no-print"><button class="action" id="download">PDF-Bericht speichern</button><button class="action ghost" id="share" style="background:#fffdf6">Ergebnis teilen</button></div><p class="small">PDF: Wähle im Druckdialog „Als PDF speichern“. Zum Versenden kannst du anschließend die PDF-Datei anhängen.</p></section><div id="print-sheet" style="display:none"></div></main><footer>EARTH / EXPEDITION · DEUTSCH B1 · Lernmaterial zur Geschichte der Evolution · Dokumentarischer Gestaltungsstil (keine Verbindung zu National Geographic oder Discovery)</footer>
+<script>const DATA={
+  "quiz": [
+    {
+      "q": "Wie sah die Erde vor etwa 4,5 Milliarden Jahren aus?",
+      "opts": [
+        "Sie war sehr heiß und lebensfeindlich.",
+        "Sie hatte große Wälder.",
+        "Auf ihr lebten schon Säugetiere."
+      ],
+      "correct": 0,
+      "explanation": "Die junge Erde war ein glühender Feuerball."
+    },
+    {
+      "q": "Was ist über die Anfänge des Lebens bekannt?",
+      "opts": [
+        "Die ersten Tiere lebten an Land.",
+        "Die genauen Anfänge sind noch nicht vollständig geklärt.",
+        "Alle Lebewesen entstanden gleichzeitig."
+      ],
+      "correct": 1,
+      "explanation": "Laut Video bildeten sich lebende Zellen aus organischen Verbindungen; vieles ist noch unklar."
+    },
+    {
+      "q": "Warum war die Entwicklung mehrzelliger Organismen so wichtig?",
+      "opts": [
+        "Alle Einzeller verschwanden.",
+        "Die Lebewesen brauchten kein Wasser mehr.",
+        "Zellen konnten zusammenarbeiten und komplexere Organismen bilden."
+      ],
+      "correct": 2,
+      "explanation": "Zellen schlossen sich zusammen und koordinierten ihr Verhalten."
+    },
+    {
+      "q": "Was bezeichnet man als Kambrische Explosion?",
+      "opts": [
+        "Die schnelle Entstehung vieler unterschiedlicher Tiergruppen.",
+        "Einen großen Vulkanausbruch.",
+        "Das Verschwinden aller Meerestiere."
+      ],
+      "correct": 0,
+      "explanation": "In relativ kurzer Zeit entstand eine erstaunliche Vielfalt an Lebewesen."
+    },
+    {
+      "q": "Warum gelten Neunaugen als „lebende Fossilien“?",
+      "opts": [
+        "Weil sie heute ausgestorben sind.",
+        "Weil sie Vertreter einer sehr alten Tiergruppe sind.",
+        "Weil sie immer in Stein leben."
+      ],
+      "correct": 1,
+      "explanation": "Die Tiergruppe existiert seit sehr langer Zeit und hat heute noch Vertreter."
+    },
+    {
+      "q": "Welche Entwicklung war bei frühen Panzerfischen besonders wichtig?",
+      "opts": [
+        "Die Entwicklung von Flügeln.",
+        "Die Fähigkeit, an Land Eier zu legen.",
+        "Ein kräftiger Unterkiefer zum Zubeißen."
+      ],
+      "correct": 2,
+      "explanation": "Der Unterkiefer war eine wichtige Entwicklung in der Geschichte der Wirbeltiere."
+    },
+    {
+      "q": "Wie sah die Gegend des heutigen Deutschlands vor etwa 300 Millionen Jahren aus?",
+      "opts": [
+        "Dort gab es riesige Sumpfwälder.",
+        "Dort lag eine große Eiswüste.",
+        "Dort gab es keine Pflanzen."
+      ],
+      "correct": 0,
+      "explanation": "Deutschland lag damals in Äquatornähe und hatte große Sumpfwälder."
+    },
+    {
+      "q": "Wofür war die Hornschuppenhaut früher Landtiere nützlich?",
+      "opts": [
+        "Um schneller schwimmen zu können.",
+        "Um sich an trockene Lebensräume anzupassen.",
+        "Um in großen Tiefen zu leben."
+      ],
+      "correct": 1,
+      "explanation": "Die Haut war eine Anpassung an das Leben außerhalb des Wassers."
+    },
+    {
+      "q": "Warum mussten sich Lebewesen immer wieder anpassen?",
+      "opts": [
+        "Weil alle Kontinente unverändert blieben.",
+        "Weil das Meer immer gleich hoch war.",
+        "Weil Klima und Landschaften sich veränderten."
+      ],
+      "correct": 2,
+      "explanation": "Kontinente bewegten sich, und der Meeresspiegel stieg und sank."
+    },
+    {
+      "q": "Warum hatten Sauropoden massive Säulenbeine?",
+      "opts": [
+        "Damit sie ihr enormes Gewicht tragen konnten.",
+        "Damit sie ihre Beute festhalten konnten.",
+        "Damit sie fliegen konnten."
+      ],
+      "correct": 0,
+      "explanation": "Die Beine standen unter dem Körper und trugen viele Tonnen Gewicht."
+    },
+    {
+      "q": "Warum war die Fortpflanzung der Sauropoden riskant?",
+      "opts": [
+        "Weil sie keine Eier legten.",
+        "Weil die Jungtiere nach dem Schlüpfen allein waren.",
+        "Weil sie nur im Wasser leben konnten."
+      ],
+      "correct": 1,
+      "explanation": "Sauropoden ließen ihre Eier am Ufer zurück; dort gab es auch Raubtiere."
+    },
+    {
+      "q": "Welche Folge hatte der hohe Meeresspiegel vor rund 100 Millionen Jahren?",
+      "opts": [
+        "Alle Flüsse trockneten aus.",
+        "Die Ozeane verschwanden.",
+        "Flache Meere boten großen Jägern Lebensraum."
+      ],
+      "correct": 2,
+      "explanation": "In flachen Meeren lebten unter anderem große Krokodile und Haie."
+    },
+    {
+      "q": "Was war der Vorteil der Partnerschaft zwischen Bienen und Blütenpflanzen?",
+      "opts": [
+        "Bienen bekamen Nahrung und halfen bei der Bestäubung.",
+        "Pflanzen brauchten keine Samen mehr.",
+        "Bienen konnten ohne Blüten leben."
+      ],
+      "correct": 0,
+      "explanation": "Beide Seiten profitierten: Nahrung für Bienen, Bestäubung für Pflanzen."
+    },
+    {
+      "q": "Welche Eigenschaft unterstützte frühe Säugetiere beim Überleben?",
+      "opts": [
+        "Sie konnten ihr Leben lang ohne Futter auskommen.",
+        "Sie konnten ihre Körpertemperatur selbst regulieren.",
+        "Sie lebten nur im Meer."
+      ],
+      "correct": 1,
+      "explanation": "Zusammen mit Fell, Greifpfoten und einem spezialisierten Gebiss war das ein Vorteil."
+    },
+    {
+      "q": "Was löste der Meteoriteneinschlag laut Video aus?",
+      "opts": [
+        "Eine dauerhaft warme Erde.",
+        "Die Entstehung der ersten Zellen.",
+        "Eine globale Katastrophe und einen schnellen Temperaturabfall."
+      ],
+      "correct": 2,
+      "explanation": "Der Einschlag brachte starke Umweltveränderungen mit sich."
+    },
+    {
+      "q": "Welche Tiergruppe ging gestärkt aus der Krise hervor?",
+      "opts": [
+        "Säugetiere.",
+        "Große nicht-vogelartige Dinosaurier.",
+        "Trilobiten."
+      ],
+      "correct": 0,
+      "explanation": "Säugetiere und Samenpflanzen überstanden die Krise erfolgreich."
+    },
+    {
+      "q": "Warum wurde das Eiszeitalter für viele Lebewesen problematisch?",
+      "opts": [
+        "Die Kontinente hörten auf, sich zu bewegen.",
+        "Eis bedeckte große Flächen und verkleinerte Lebensräume.",
+        "Alle Ozeane verloren ihr Wasser."
+      ],
+      "correct": 1,
+      "explanation": "Viele Arten überlebten nur in den kleineren eisfreien Gebieten."
+    },
+    {
+      "q": "Warum nennt das Video Mammuts und Wollnashörner Nomaden?",
+      "opts": [
+        "Sie lebten immer am gleichen Ort.",
+        "Sie bauten feste Nester.",
+        "Sie wanderten dorthin, wo es genug Nahrung gab."
+      ],
+      "correct": 2,
+      "explanation": "Die Tiere blieben dort, wo sie etwas zu fressen fanden."
+    },
+    {
+      "q": "Was geschah nach der letzten Kälteperiode?",
+      "opts": [
+        "Gletscher zogen sich zurück und Landschaften veränderten sich.",
+        "Die Erde wurde wieder ein Feuerball.",
+        "Alle Säugetiere verschwanden."
+      ],
+      "correct": 0,
+      "explanation": "Seit ungefähr 10.000 Jahren haben sich viele Landschaften ihrer heutigen Form angenähert."
+    },
+    {
+      "q": "Welche Aussage fasst das Video am besten zusammen?",
+      "opts": [
+        "Evolution war nach der Kambrischen Explosion vorbei.",
+        "Vielfalt entwickelte sich über lange Zeit durch Veränderungen und Anpassung.",
+        "Nur die größten Lebewesen konnten überleben."
+      ],
+      "correct": 1,
+      "explanation": "Das Leben hat sich über Milliarden Jahre entwickelt und wiederholt angepasst."
+    }
+  ],
+  "vocab": [
+    [
+      "die Flamme",
+      "полум’я"
+    ],
+    [
+      "die Keime",
+      "зародки; мікроби (залежно від контексту)"
+    ],
+    [
+      "im Keim ersticken",
+      "придушити в зародку"
+    ],
+    [
+      "die Qualle",
+      "медуза"
+    ],
+    [
+      "das Raubtier",
+      "хижак; хижа тварина"
+    ],
+    [
+      "das Fossil",
+      "скам’янілість"
+    ],
+    [
+      "das Wirbeltier",
+      "хребетна тварина"
+    ],
+    [
+      "der Tintenfisch",
+      "кальмар; каракатиця (головоногий молюск)"
+    ],
+    [
+      "der Kiefer",
+      "щелепа"
+    ],
+    [
+      "der Unterkiefer",
+      "нижня щелепа"
+    ],
+    [
+      "die Kiefer",
+      "сосна"
+    ],
+    [
+      "der Vorgänger",
+      "попередник"
+    ],
+    [
+      "der Sumpf",
+      "болото"
+    ],
+    [
+      "die Libelle",
+      "бабка (комаха)"
+    ],
+    [
+      "die Hornschuppenhaut",
+      "шкіра з роговими лусками"
+    ],
+    [
+      "die Eidechse",
+      "ящірка"
+    ],
+    [
+      "der Meeresspiegel",
+      "рівень моря"
+    ],
+    [
+      "das Krokodil",
+      "крокодил"
+    ],
+    [
+      "die Bestäubung",
+      "запилення"
+    ],
+    [
+      "die Blütenpflanze",
+      "квіткова рослина"
+    ],
+    [
+      "die Nahrung",
+      "їжа; пожива"
+    ],
+    [
+      "das Nagetier",
+      "гризун"
+    ],
+    [
+      "die Pfote",
+      "лапа"
+    ],
+    [
+      "die Vorderpfote",
+      "передня лапа"
+    ],
+    [
+      "das Fell",
+      "хутро; шерсть тварини"
+    ]
+  ],
+  "paragraphs": [
+    "Die Geschichte des Lebens begann lange vor den Dinosauriern. Die junge Erde war zunächst sehr heiß. Erst viel später entstanden einfache Zellen. Über Milliarden Jahre entwickelte sich das Leben langsam weiter. Aus einzelnen Zellen wurden Gruppen, und schließlich entstanden Tiere mit vielen Zellen.",
+    "Während der Kambrischen Explosion entstand eine große Vielfalt. Im Meer lebten bereits Quallen, frühe Wirbeltiere und andere Organismen. Einige Arten kennt man heute nur als {0}. Manche großen Tiere jagten kleinere Tiere und waren damit {1}.",
+    "Als Tiere das Land besiedelten, mussten sie sich an eine neue Umwelt gewöhnen. In feuchten Gebieten gab es viele Pflanzen und riesige {2}. Frühe Reptilien hatten besondere Haut, die sie vor dem Austrocknen schützte. Später wanderten Kontinente durch verschiedene Klimazonen. Auch der {3} veränderte sich immer wieder.",
+    "In der Zeit der Dinosaurier lebten sehr große Pflanzenfresser und gefährliche Jäger. Nach einer globalen Katastrophe starben viele Arten aus. Andere konnten überleben. Besonders wichtig war die Zusammenarbeit zwischen Bienen und {4}: Die Bienen halfen bei der {5} und bekamen dafür Nahrung.",
+    "Kleine Säugetiere besaßen Fell, besondere Zähne und Pfoten. Diese Eigenschaften halfen ihnen, auch schwierige Zeiten zu überstehen. Im Eiszeitalter mussten Mammuts weite Strecken zurücklegen, um genug {6} zu finden. Die Geschichte zeigt: Das Leben verändert sich ständig, und Anpassung kann über das Überleben entscheiden."
+  ],
+  "cloze": [
+    "Fossilien",
+    "Raubtiere",
+    "Sümpfe",
+    "Meeresspiegel",
+    "Blütenpflanzen",
+    "Bestäubung",
+    "Nahrung"
+  ]
+};const selections=Array(20).fill(null);let clozeScore=0,clozeDone=false;let selectedGerman=null;let matched=new Set(),firstWrong=new Set();const shuffle=a=>a.map(x=>({x,k:Math.random()})).sort((a,b)=>a.k-b.k).map(o=>o.x);const safe=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');const $=id=>document.getElementById(id);
+function go(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));$(id).classList.add('active');$(id).scrollIntoView({behavior:'smooth',block:'start'});}document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+function renderQ(from,to,out,meter,res){for(let i=from;i<to;i++){let q=DATA.quiz[i],n=i-from+1;const card=document.createElement('div');card.className='question';card.id='q'+i;card.innerHTML=`<div class="qtop">FRAGE ${n} / 10</div><h3>${safe(q.q)}</h3><div class="options">${q.opts.map((x,j)=>`<button class="option" data-i="${i}" data-j="${j}"><span class="letter">${'ABC'[j]}</span> ${safe(x)}</button>`).join('')}</div><div class="explain" id="ex${i}" aria-live="polite"></div>`;$(out).appendChild(card);card.querySelectorAll('.option').forEach(b=>b.addEventListener('click',()=>{if(selections[i]!==null)return;const j=+b.dataset.j;selections[i]=j;card.querySelectorAll('.option').forEach((ob,k)=>{ob.disabled=true;if(k===q.correct)ob.classList.add('key');if(k===j)ob.classList.add('selected',j===q.correct?'correct':'wrong')});const explain=$('ex'+i);explain.style.display='block';explain.className='explain'+(j!==q.correct?' wrong':'');explain.innerHTML=`<strong>${j===q.correct?'✓ Richtig!':'✗ Leider falsch.'}</strong> ${safe(q.explanation)}`;update();}));}}
+renderQ(0,10,'quiz1');renderQ(10,20,'quiz2');
+$('bank').innerHTML=shuffle(DATA.cloze).map(w=>`<span>${safe(w)}</span>`).join('');$('reading').innerHTML=DATA.paragraphs.map(p=>`<p>${p.replace(/\{(\d)\}/g,(_,i)=>`<select aria-label="Lücke ${+i+1}" data-cloze="${i}"><option value="">${+i+1}. Wort wählen</option>${DATA.cloze.map(w=>`<option value="${safe(w)}">${safe(w)}</option>`).join('')}</select>`)}</p>`).join('');
+$('checkCloze').addEventListener('click',()=>{const sel=[...document.querySelectorAll('[data-cloze]')];if(sel.some(x=>!x.value)){$('clozeFeedback').textContent='Bitte fülle zuerst alle sieben Lücken aus.';return;}clozeScore=0;sel.forEach(el=>{const ok=el.value===DATA.cloze[+el.dataset.cloze];if(ok)clozeScore++;el.className=ok?'good':'bad';el.disabled=true;});clozeDone=true;$('clozeFeedback').textContent=`${clozeScore} von 7 richtig. ${clozeScore===7?'Super!':'Die falschen Felder sind rot markiert.'}`;$('checkCloze').disabled=true;update()});$('resetCloze').addEventListener('click',()=>{document.querySelectorAll('[data-cloze]').forEach(el=>{el.value='';el.className='';el.disabled=false});clozeScore=0;clozeDone=false;$('checkCloze').disabled=false;$('clozeFeedback').textContent='';update()});
+let rightOrder=[];function renderMatching(){selectedGerman=null;matched=new Set();firstWrong=new Set();$('german').innerHTML='';$('ukrainian').innerHTML='';rightOrder=shuffle(DATA.vocab.map((w,i)=>i));DATA.vocab.forEach((w,i)=>{const b=document.createElement('button');b.className='matchbtn';b.dataset.g=i;b.innerHTML=`<span class="index">${i+1}.</span>${safe(w[0])}`;b.addEventListener('click',()=>{if(matched.has(i))return;selectedGerman=i;document.querySelectorAll('[data-g]').forEach(el=>el.classList.toggle('active',+el.dataset.g===i));$('matchFeedback').textContent='Wähle jetzt die ukrainische Übersetzung.'});$('german').appendChild(b)});rightOrder.forEach((i,k)=>{const b=document.createElement('button');b.className='matchbtn';b.dataset.u=i;b.innerHTML=`<span class="index">${String.fromCharCode(65+k)}.</span>${safe(DATA.vocab[i][1])}`;b.addEventListener('click',()=>{if(selectedGerman===null){$('matchFeedback').textContent='Wähle zuerst ein deutsches Wort.';return}if(matched.has(i))return;const g=selectedGerman;if(g===i){matched.add(g);document.querySelector(`[data-g="${g}"]`).className='matchbtn done';document.querySelector(`[data-g="${g}"]`).disabled=true;b.className='matchbtn done';b.disabled=true;$('matchFeedback').textContent='✓ Richtig verbunden!';selectedGerman=null}else{firstWrong.add(g);$('matchFeedback').textContent='✗ Das passt noch nicht. Versuche es noch einmal.';b.classList.add('shake');setTimeout(()=>b.classList.remove('shake'),650)}update()});$('ukrainian').appendChild(b)});update()};renderMatching();$('resetMatch').addEventListener('click',renderMatching);
+function update(){for(let k=0;k<2;k++){let sl=selections.slice(k*10,k*10+10),n=sl.filter(x=>x!==null).length,s=sl.filter((x,i)=>x===DATA.quiz[k*10+i].correct).length;$('meter'+(k+1)).textContent=n+' / 10';$('s'+(k+1)).textContent=s+'/10';let r=$('res'+(k+1));if(n===10){r.style.display='block';r.innerHTML=`<strong>Teil ${k+1} abgeschlossen</strong><div class="big">${s} / 10</div>${s>=8?'Sehr gut gemacht!':'Lies die Erklärungen noch einmal.'}`}else r.style.display='none'}$('meter3').textContent=(clozeDone?clozeScore:0)+' / 7';$('s3').textContent=(clozeDone?clozeScore:0)+'/7';$('meter4').textContent=matched.size+' / 25';const mscore=[...matched].filter(i=>!firstWrong.has(i)).length;$('s4').textContent=mscore+'/25';const total=selections.filter((x,i)=>x===DATA.quiz[i].correct).length+(clozeDone?clozeScore:0)+mscore;$('total').textContent=`${total} von 52 Punkten · ${Math.round(total/52*100)} %`;}update();
+function makePrint(){const name=$('student').value.trim()||'Nicht angegeben';const date=new Date().toLocaleString('de-DE');const qhtml=DATA.quiz.map((q,i)=>`<p><b>${i+1}. ${safe(q.q)}</b><br>Antwort: ${selections[i]===null?'Nicht beantwortet':safe(q.opts[selections[i]])} — ${selections[i]===q.correct?'Richtig':'Falsch / offen'}<br>Richtig: ${safe(q.opts[q.correct])}</p>`).join('');const cl=[...document.querySelectorAll('[data-cloze]')].map((el,i)=>`<li>Lücke ${i+1}: ${safe(el.value||'offen')} (richtig: ${safe(DATA.cloze[i])})</li>`).join('');$('print-sheet').innerHTML=`<h1 style="font-size:42px">EARTH / EXPEDITION</h1><h2>Ergebnisbericht B1</h2><p><b>Name:</b> ${safe(name)}<br><b>Datum:</b> ${date}</p><p><b>${$('total').textContent}</b></p><p>${$('s1').textContent} (Teil 1) · ${$('s2').textContent} (Teil 2) · ${$('s3').textContent} (Lückentext) · ${$('s4').textContent} (Wortschatz, erster Versuch)</p><hr><h2>Hörverstehen: Antworten</h2>${qhtml}<h2>Lückentext</h2><ol>${cl}</ol><h2>Wortschatz</h2><p>${matched.size} von 25 Paaren verbunden; ${firstWrong.size} Wörter mit mindestens einem falschen Versuch.</p>`};$('download').addEventListener('click',()=>{makePrint();window.print()});$('share').addEventListener('click',async()=>{makePrint();const text=`Evolution B1 — ${$('student').value.trim()||'Schüler/in'} — ${$('total').textContent}`;if(navigator.share){try{await navigator.share({title:'Evolution B1 – Ergebnis',text});return}catch(e){}}window.location.href='mailto:?subject='+encodeURIComponent('Evolution B1 – Ergebnis')+'&body='+encodeURIComponent(text+'\n\nDen ausführlichen Bericht bitte über „PDF-Bericht speichern“ erstellen und anhängen.')});
+</script></body></html>
